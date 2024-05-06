@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25]"
+      className="pt-[12rem] -mt-[5.25rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -40,13 +40,13 @@ const Hero = () => {
             with Brainwave, the open AI chat app.
           </p>
           <Button href="/pricing" white>
-            Get Started
+            Get started
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
-              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem}" />
+              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
 
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
@@ -71,7 +71,7 @@ const Hero = () => {
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18] xl:flex"
+                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
                     title="Code generation"
                   />
                 </ScrollParallax>
