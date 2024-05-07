@@ -1,5 +1,5 @@
 import { brainwaveSymbol, check } from "../assets";
-import { collabContent, collabText } from "../constants";
+import { collabApps, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 
@@ -47,6 +47,16 @@ const Collaboration = () => {
                 </div>
               </div>
             </div>
+
+            <ul>
+              {collabApps.map((app, index) => (
+                <li key={app.id}>
+                  <div>
+                    <img src={app.icon} />
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
