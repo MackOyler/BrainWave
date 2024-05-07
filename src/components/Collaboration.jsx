@@ -1,5 +1,6 @@
 import { check } from "../assets";
-import { collabContent } from "../constants";
+import { collabContent, collabText } from "../constants";
+import Button from "./Button";
 import Section from "./Section";
 
 const Collaboration = () => {
@@ -17,13 +18,25 @@ const Collaboration = () => {
                 <div className="flex items-center">
                   <img src={check} width={24} height={24} alt="check" />
                   <h6 className="body-2 ml-5">{item.title}</h6>
-                  {item.text && (
-                    <p className="body-2 ml-3 text-n-4">{item.text}</p>
-                  )}
                 </div>
+                {item.text && (
+                  <p className="body-2 ml-3 text-n-4">{item.text}</p>
+                )}
               </li>
             ))}
           </ul>
+
+          <Button>Try it now</Button>
+        </div>
+
+        <div className="lg:ml-auto xl:w-[38rem] mt-4">
+          <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
+            {collabText}
+          </p>
+
+          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
+            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full"></div>
+          </div>
         </div>
       </div>
     </Section>
